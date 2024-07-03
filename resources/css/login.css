@@ -1,0 +1,107 @@
+    #mydiv {
+        background: url(../img/login.png) 100% 100%;
+        width: 100%;
+        padding: 10% 0;
+        background-size: 100%;
+    }
+
+    .email-link {
+        color: #FFF;
+        transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        text-transform: lowercase;
+    }
+
+    .social-icons1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    .layui-nav {
+        background-color: transparent !important;
+    }
+
+    .flex-control-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .htd {
+        padding-top: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .llogo {
+        width: 40%;
+    }
+
+    .llink {
+        width: 30%;
+        color: black;
+    }
+
+    .llink:hover {
+        color: black;
+    }
+
+    .before {
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background: linear-gradient(89.95deg, rgba(82, 82, 82, 0.03) 20.01%, #000000 77.77%);
+        margin-right: 5px;
+    }
+
+    .after {
+        width: 100px;
+        display: inline-block;
+        height: 1px;
+        background: linear-gradient(89.95deg, rgba(82, 82, 82, 0.03) 20.01%, #000000 77.77%);
+        margin-left: 5px;
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        /* IE 9 */
+        -webkit-transform: rotate(180deg);
+        /* Safari and Chrome */
+    }
+
+    .member-button {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .member-button:hover {
+        color: rgba(255, 255, 255, 1);
+        background-color: linear-gradient(90deg, #AAAAB9 1.13%, #B1B1BD 99.52%);
+    }
+
+    @media screen and (max-width: 480px) {
+        .after {
+            width: 70px;
+        }
+
+        .before {
+            width: 70px;
+        }
+
+        .llogo {
+            width: 50%;
+        }
+
+        .llink {
+            width: 40%;
+        }
+
+        .show-main {
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }

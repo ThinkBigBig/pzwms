@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class Inventory extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        //
+        Schema::table('wms_inv_goods_detail', function (Blueprint $table) {
+            $table->string('warehouse_name', 30)->default('')->comment('仓库名称')->after('warehouse_code');
+            $table->string('sup_name', 30)->default('')->comment('供应商名称')->after('sup_id');
+            $table->string('area_name', 30)->default('')->comment('库区名称')->after('area_code');
+        });
+
+        Schema::table('wms_order_statements', function (Blueprint $table) {
+            $table->string('warehouse_code', 40)->default('')->comment('仓库编码')->after('status');
+            $table->string('warehouse_name', 30)->default('')->comment('仓库名称')->after('status');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        //
+    }
+}
